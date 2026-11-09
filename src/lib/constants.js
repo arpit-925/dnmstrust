@@ -17,9 +17,9 @@ export const CONTACT = {
 
 // Social media links
 export const SOCIAL = {
-  facebook: '#',
+  facebook: 'https://www.facebook.com/share/19sFSA8r7Q/',
+  instagram: 'https://www.instagram.com/rahulmishara333?rpxt=Z2gzenc5NXRlcW1v',
   twitter: '#',
-  instagram: '#',
   youtube: '#',
 }
 
