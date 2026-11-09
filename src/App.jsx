@@ -1,8 +1,10 @@
 import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import { MessageCircle } from 'lucide-react'
 import Header from './components/layout/Header'
 import Footer from './components/layout/Footer'
 import ScrollToTop from './components/layout/ScrollToTop'
+import { CONTACT } from './lib/constants'
 
 // Lazy load pages for better performance
 const Home = lazy(() => import('./pages/Home'))
@@ -33,13 +35,29 @@ function PageLoader() {
   )
 }
 
-// Public layout with header and footer
+// Public layout with header, footer and floating WhatsApp action
 function PublicLayout({ children }) {
+  const cleanWa = CONTACT.whatsapp.replace(/[^0-9]/g, '')
+
   return (
     <>
       <Header />
       <Suspense fallback={<PageLoader />}>{children}</Suspense>
       <Footer />
+      {/* Floating WhatsApp Quick Action */}
+      <a
+        href={`https://wa.me/${cleanWa}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-5 right-5 z-40 bg-[#25D366] text-white p-3.5 rounded-full shadow-lg hover:bg-[#20ba59] transition-all duration-300 flex items-center gap-2 group hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2"
+        aria-label="Chat on WhatsApp"
+        title="Chat with Dhirendra Nath Mishra Seva Trust on WhatsApp"
+      >
+        <MessageCircle size={22} className="fill-current" />
+        <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 text-xs font-semibold">
+          Chat on WhatsApp
+        </span>
+      </a>
     </>
   )
 }

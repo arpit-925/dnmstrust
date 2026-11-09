@@ -6,13 +6,13 @@
 export const TRUST_NAME = 'Dhirendra Nath Mishra Seva Trust'
 export const TRUST_SHORT_NAME = 'DNM Seva Trust'
 
-// Contact details - UPDATE THESE with real values
+// Contact details
 export const CONTACT = {
-  phone: '+91-XXXXXXXXXX',
+  phone: '+91 8858187473',
   email: 'info@dnmsevatrust.org',
-  whatsapp: '+91-XXXXXXXXXX',
-  address: 'Office Address, City, State, India',
-  mapEmbedUrl: '', // Google Maps embed URL
+  whatsapp: '+91 8858187473',
+  address: 'Kamhari, Robertsganj, Sonbhadra, Uttar Pradesh, India',
+  mapEmbedUrl: 'https://maps.google.com/maps?q=Kamhari,+Robertsganj,+Sonbhadra,+Uttar+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed',
 }
 
 // Social media links
