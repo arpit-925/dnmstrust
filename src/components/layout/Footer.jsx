@@ -12,9 +12,11 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-saffron rounded-full flex items-center justify-center shrink-0">
-                <span className="text-white font-bold text-lg font-serif">D</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="DNM Seva Trust Logo"
+                className="w-12 h-12 object-contain rounded-full bg-white p-0.5 shadow-xs shrink-0"
+              />
               <div>
                 <p className="font-bold text-sm leading-tight">Dhirendra Nath Mishra</p>
                 <p className="font-semibold text-xs leading-tight opacity-80">Seva Trust</p>

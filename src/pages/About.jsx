@@ -32,9 +32,11 @@ export default function About() {
       <section className="bg-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center">
-            <div className="w-20 h-20 bg-saffron/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Target size={40} className="text-saffron" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Dhirendra Nath Mishra Seva Trust Logo"
+              className="w-24 h-24 object-contain rounded-full mx-auto mb-6 shadow-md border-2 border-border p-1 bg-white"
+            />
             <h2 className="text-2xl md:text-3xl font-bold text-navy mb-6">
               Dhirendra Nath Mishra Seva Trust
             </h2>

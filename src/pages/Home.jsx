@@ -223,14 +223,16 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Sub-badge */}
+                {/* Sub-badge with Trust Seal */}
                 <div className="mt-4 p-4 bg-white rounded-xl border border-border shadow-sm flex items-center gap-3">
-                  <div className="w-10 h-10 bg-green/10 rounded-full flex items-center justify-center shrink-0">
-                    <Shield size={20} className="text-green" />
-                  </div>
+                  <img
+                    src="/logo.png"
+                    alt="DNM Seva Trust Seal"
+                    className="w-12 h-12 object-contain rounded-full shadow-xs shrink-0 bg-white"
+                  />
                   <div>
-                    <p className="text-xs font-bold text-navy">Transparent & Non-Profit Welfare</p>
-                    <p className="text-[11px] text-charcoal/60">Registered trust working strictly for societal well-being</p>
+                    <p className="text-xs font-bold text-navy">डीएनएम सेवा ट्रस्ट • DNM Seva Trust</p>
+                    <p className="text-[11px] text-charcoal/60">Registered charitable organization committed to public welfare</p>
                   </div>
                 </div>
               </div>

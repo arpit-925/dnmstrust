@@ -59,9 +59,11 @@ export default function AdminLayout() {
         <div className="h-full flex flex-col">
           <div className="p-4 border-b border-border">
             <Link to="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 bg-saffron rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm font-serif">D</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="DNM Seva Trust Logo"
+                className="w-9 h-9 object-contain rounded-full bg-white shadow-xs shrink-0"
+              />
               <div>
                 <p className="text-navy font-bold text-sm leading-tight">DNM Seva Trust</p>
                 <p className="text-xs text-charcoal/50">Admin Panel</p>

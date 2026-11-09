@@ -46,9 +46,11 @@ export default function AdminLogin() {
     <main className="min-h-screen bg-light-bg flex items-center justify-center px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="w-16 h-16 bg-saffron rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-white font-bold text-2xl font-serif">D</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="DNM Seva Trust Logo"
+            className="w-20 h-20 object-contain rounded-full mx-auto mb-4 bg-white shadow-md p-1 border border-border"
+          />
           <h1 className="text-2xl font-bold text-navy">Admin Login</h1>
           <p className="text-charcoal/60 text-sm mt-1">{TRUST_NAME}</p>
         </div>

@@ -27,15 +27,17 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 shrink-0">
-            <div className="w-10 h-10 bg-saffron rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg font-serif">D</span>
-            </div>
+          <Link to="/" className="flex items-center gap-3 shrink-0 group">
+            <img
+              src="/logo.png"
+              alt="Dhirendra Nath Mishra Seva Trust Logo"
+              className="w-11 h-11 md:w-12 md:h-12 object-contain rounded-full shadow-xs group-hover:scale-105 transition-transform duration-200"
+            />
             <div className="hidden sm:block">
-              <p className="text-navy font-bold text-sm md:text-base leading-tight">
+              <p className="text-navy font-bold text-sm md:text-base leading-tight group-hover:text-saffron transition-colors">
                 Dhirendra Nath Mishra
               </p>
-              <p className="text-navy font-semibold text-xs md:text-sm leading-tight">
+              <p className="text-navy font-semibold text-xs md:text-sm leading-tight opacity-90">
                 Seva Trust
               </p>
             </div>
